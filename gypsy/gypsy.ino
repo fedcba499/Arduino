@@ -58,8 +58,9 @@ void loop(void) {
   // Why "byIndex"?
   //You can have more than one DS18B20 on the same bus.
   // 0 refers to the first IC on the wire
+  
 
-  if(ledState == 0 && temp < 3){//if LED is off and button code is ok
+  if(ledState == 0 && temp < 5){//if LED is off and button code is ok
           digitalWrite(ledPin, HIGH);
           digitalWrite(fuel , LOW);
           delay(3000);       
